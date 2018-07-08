@@ -1,0 +1,95 @@
+libmath-spline-perl (0.02-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Carlo Segre from Uploaders. Thanks for your work!
+  * Add Testsuite header for autopkgtest-pkg-perl.
+
+  [ Niko Tyni ]
+  * Update to debhelper compat level 10
+  * Update to Standards-Version 4.1.3
+  * Declare that the package does not need (fake)root to build
+
+ -- Niko Tyni <ntyni@debian.org>  Sun, 25 Feb 2018 10:32:22 +0200
+
+libmath-spline-perl (0.02-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Removed: XS-
+    Vcs-Svn fields.
+  * Revert unneeded change to Spline.pm.
+  * debian/watch: use dist-based URL.
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+  * Change my email address.
+
+  [ Joachim Breitner ]
+  * Removed myself from uploaders.
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Carlo Segre ]
+  * debian/control: remove duplicate "the" in description which gives
+    rise to the lintian warning.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Florian Schlichting ]
+  * Import Upstream version 0.02
+  * Add a build-dependency on Math::Derivative
+  * Bump dh compatibility to level 8 (no changes necessary)
+  * Make short description a noun phrase, mention module name in long
+    description
+  * Wrap-and-sort debian/control
+  * Switch to source format 3.0 (quilt)
+  * Switch to short-form debian/rules
+  * Convert debian/copyright to machine-readable copyright-format 1.0
+  * Declare compliance with Debian Policy 3.9.4
+  * Add myself to uploaders
+
+ -- Florian Schlichting <fsfs@debian.org>  Thu, 03 Oct 2013 22:18:13 +0200
+
+libmath-spline-perl (0.01-4) unstable; urgency=low
+
+  * Add dh_md5sums to debian/rules.
+  * Don't ignore errors of make clean.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Fri, 17 Aug 2007 13:20:30 +0200
+
+libmath-spline-perl (0.01-3) unstable; urgency=low
+
+  * Update to compatibility level 5
+
+ -- Carlo Segre <segre@debian.org>  Fri, 29 Dec 2006 14:29:07 -0600
+
+libmath-spline-perl (0.01-2) unstable; urgency=low
+
+  * Updated standards version to 3.7.2
+  * Move debhelper to Build-Depends line per policy
+
+ -- Carlo Segre <segre@iit.edu>  Thu,  8 Jun 2006 15:36:56 -0500
+
+libmath-spline-perl (0.01-1) unstable; urgency=low
+
+  * Initial Release (Closes: #302397)
+  * Maintainer - 
+    Debian Perl Group <pkg-perl-maintainer@lists.alioth.debian.org> 
+    via Carlo Segre <segre@iit.edu>
+
+ -- Carlo Segre <segre@iit.edu>  Fri, 12 Mar 2004 01:15:39 -0600
+
