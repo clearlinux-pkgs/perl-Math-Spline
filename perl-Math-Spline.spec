@@ -4,7 +4,7 @@
 #
 Name     : perl-Math-Spline
 Version  : 0.02
-Release  : 12
+Release  : 13
 URL      : https://cpan.metacpan.org/authors/id/C/CH/CHORNY/Math-Spline-0.02.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/C/CH/CHORNY/Math-Spline-0.02.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libm/libmath-spline-perl/libmath-spline-perl_0.02-2.debian.tar.xz
@@ -79,7 +79,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Math-Spline
-cp %{_builddir}/Math-Spline-0.02/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-Math-Spline/ad09dfd1729df50a9786d6c95d43a409f7022f21
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Math-Spline/ad09dfd1729df50a9786d6c95d43a409f7022f21
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -103,4 +103,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/Math/Spline.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Math/Spline.pm
