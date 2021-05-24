@@ -4,15 +4,13 @@
 #
 Name     : perl-Math-Spline
 Version  : 0.02
-Release  : 16
+Release  : 17
 URL      : https://cpan.metacpan.org/authors/id/C/CH/CHORNY/Math-Spline-0.02.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/C/CH/CHORNY/Math-Spline-0.02.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libm/libmath-spline-perl/libmath-spline-perl_0.02-2.debian.tar.xz
 Summary  : unknown
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
-Requires: perl-Math-Spline-license = %{version}-%{release}
-Requires: perl-Math-Spline-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(Math::Derivative)
 
@@ -20,33 +18,6 @@ BuildRequires : perl(Math::Derivative)
 Perl Module Math::Spline - 0.02
 This program is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
-
-%package dev
-Summary: dev components for the perl-Math-Spline package.
-Group: Development
-Provides: perl-Math-Spline-devel = %{version}-%{release}
-Requires: perl-Math-Spline = %{version}-%{release}
-
-%description dev
-dev components for the perl-Math-Spline package.
-
-
-%package license
-Summary: license components for the perl-Math-Spline package.
-Group: Default
-
-%description license
-license components for the perl-Math-Spline package.
-
-
-%package perl
-Summary: perl components for the perl-Math-Spline package.
-Group: Default
-Requires: perl-Math-Spline = %{version}-%{release}
-
-%description perl
-perl components for the perl-Math-Spline package.
-
 
 %prep
 %setup -q -n Math-Spline-0.02
@@ -92,15 +63,3 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-
-%files dev
-%defattr(-,root,root,-)
-/usr/share/man/man3/Math::Spline.3
-
-%files license
-%defattr(0644,root,root,0755)
-/usr/share/package-licenses/perl-Math-Spline/ad09dfd1729df50a9786d6c95d43a409f7022f21
-
-%files perl
-%defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.32.1/Math/Spline.pm
