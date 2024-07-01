@@ -4,7 +4,7 @@
 #
 Name     : perl-Math-Spline
 Version  : 0.02
-Release  : 25
+Release  : 26
 URL      : https://cpan.metacpan.org/authors/id/C/CH/CHORNY/Math-Spline-0.02.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/C/CH/CHORNY/Math-Spline-0.02.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libm/libmath-spline-perl/libmath-spline-perl_0.02-2.debian.tar.xz
